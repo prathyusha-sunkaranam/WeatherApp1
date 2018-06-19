@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="mansopresk.firebase.com.weatherapp.MainActivity">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/temp_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="temp:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginLeft="35dp"
+                android:layout_weight="0.5"/>
+
+            <TextView
+                android:id="@+id/temp_value_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                android:layout_weight="0.5"
+                android:text=""/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/temp_min_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="temp_min:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/temp_min__value_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:layout_weight="0.5"
+            android:text=""/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/temp_max_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="temp_max:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/temp_max__value_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:layout_weight="0.5"
+            android:text=""/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/pressure_label1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="pressure:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/pressure__value_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:layout_weight="0.5"
+            android:text=""/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sea_level_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="sea_level:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/sea_level__value_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:layout_weight="0.5"
+            android:text=""/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/grnd_level_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="grnd_level:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/grnd_level__value_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:layout_weight="0.5"
+            android:text=""/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/humidity_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="0.5"
+            android:text="humidity_level:"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/humidity__value_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:layout_weight="0.5"
+            android:text=""/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/temp_kf_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="temp_kf:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/temp_kf__value_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:layout_weight="0.5"
+            android:text=""/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+</ScrollView>
